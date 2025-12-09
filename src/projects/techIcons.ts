@@ -69,5 +69,4 @@ export const techIcons: Record<string, string> = {
 
   // --- if chart.js
   "Chart.js": "devicon-chartjs-plain colored",
-  Github: "devicon-github-original colored",
 };

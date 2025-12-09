@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
-import { Eye } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { techIcons } from "../projects/techIcons";
 export default function Hero() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-10">
@@ -28,10 +29,12 @@ export default function Hero() {
 
             <div className="mt-6 flex flex-wrap gap-3">
               <a
-                href="#projects"
+                href="https://github.com/ramji023"
                 className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-indigo-600 text-white shadow-md hover:scale-[1.02] transition-transform"
               >
-                View Projects <Eye className="w-5 h-5" />
+                <i className={`${techIcons["GitHub"]} text-2xl text-white`}></i>
+                View My Github
+                <ArrowRight className="w-5 h-5" />
               </a>
               <a
                 href="#contact"

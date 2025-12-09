@@ -46,5 +46,5 @@ export const skills = [
   "Redux",
   "Vite",
   "Next.js",
-  "Figma"
+  "Figma",
 ];
