@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
+@theme {
+  --default-font-family:"Geist Mono", monospace;
+  --text-primary : 18px;
+  --leading-primary: 28px;
+}
