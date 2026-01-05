@@ -17,19 +17,19 @@ export default function Hero() {
               <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-600 to-sky-400">
                 Full-Stack Web Developer
               </span>{" "}
-              building simple, fast web apps
+              building interactive, fast web apps
             </h1>
 
             <p className="mt-4 text-slate-600 max-w-xl">
               I build full-stack applications end-to-end — crafting UI with
               React and Tailwind, developing backend APIs with Node.js, managing
-              databases, and deploying production-ready apps. I focus on
-              creating reliable, interactive, and maintainable products.
+              databases, and deploying production-ready apps.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="https://github.com/ramji023"
+                target="_blank"
                 className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-indigo-600 text-white shadow-md hover:scale-[1.02] transition-transform"
               >
                 <i className={`${techIcons["GitHub"]} text-2xl text-white`}></i>

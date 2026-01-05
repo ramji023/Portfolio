@@ -9,20 +9,24 @@ export interface Project {
   githubLink: string;
   liveLink: string;
   status: "In Progress" | "Completed" | "Under Development" | "Paused";
+  date?: string;
 }
 
 export const projects: Project[] = [
   {
     id: 1,
     title: "Spoona - Recipe App",
-    description:
-      "A feature-rich recipe application where users can explore, create, and manage recipes with personalized tools.",
+    description: `Sppona is a feature-rich recipe application designed to help users discover, create, and manage recipes with ease. 
+  It offers personalized tools such as saved favorites, custom recipe creation, and smart organization for everyday cooking.
+  The platform focuses on a clean, intuitive user experience while supporting rich content like ingredients, steps, and images.
+  Built with scalability in mind, Sppona delivers fast performance and a seamless experience across devices.`,
     image:
-      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1765201749/009d0445-3f6d-49ae-b961-da87a3e90b33.png",
+      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1767622595/ddc662de-11fc-432d-9628-17272a8b8cb3.png",
     gallery: [
-      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1765245927/be5c1cf3-5831-455e-b35b-7268dab7e40c.png",
+      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1767622712/28648e92-e687-4458-9660-b5eccd59a931.png",
       "https://res.cloudinary.com/dqr7qcgch/image/upload/v1765245850/5b2eaa0b-f4dc-4693-b6ba-0a8ef4cdc9da.png",
-      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1765245771/df751387-3ec1-4427-8f4c-05913c8c2507.png",
+      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1767622865/Screenshot_2026-01-05_194847_qcl442.png",
+      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1767622949/0602d782-dcda-43bc-988c-30d18f86af7e.png",
     ],
     tech: [
       "React",
@@ -50,18 +54,23 @@ export const projects: Project[] = [
     githubLink: "https://github.com/ramji023/Spoona",
     liveLink: "https://spoona-web.vercel.app/",
     status: "Paused",
+    date: "June 2025 – Now",
   },
   {
     id: 2,
     title: "QuizArena - Multiplayer Quiz Game",
-    description:
-      "A real-time quiz platform where admins can host quizzes and players can join instantly.",
+    description: `QuizArena is a real-time multiplayer quiz platform where hosts can create, edit, and conduct live quizzes for players around the world.
+  It features an AI-powered quiz builder that helps hosts generate engaging questions quickly across multiple topics.
+  Players can join quizzes instantly, compete in real time, and track their performance through dynamic live leaderboards.
+  The platform also allows players to choose their preferred quiz themes, delivering a personalized and competitive gaming experience.`,
     image:
-      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1765250929/quiz-arena_2_exjukt.jpg",
+      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1767624264/cbb48788-cc24-4164-a3e8-665b8e073001.png",
     gallery: [
-      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1765246075/7241563a-9c17-466f-b984-2e15f43b18f1.png",
-      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1765246151/a8f3d486-3f3a-4ee6-9023-a661a9ea0607.png",
+      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1767624377/75f70a83-f6af-474a-942a-f3b4b9ef7b39.png",
+      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1766065502/leaderboard_afpo4q.jpg",
       "https://res.cloudinary.com/dqr7qcgch/image/upload/v1765246206/7f8de7f9-f6b4-420b-8bc4-85f5ef4827bf.png",
+      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1766065502/leader-3_s4fvkf.jpg",
+      "https://res.cloudinary.com/dqr7qcgch/image/upload/v1767624551/9cfebddd-7bda-4a89-8f60-065bf9aa9968.png"
     ],
     tech: [
       "React",
@@ -90,6 +99,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/ramji023/Quiz-Arena",
     liveLink: "https://quiz-arena-web.vercel.app/",
     status: "In Progress",
+    date: "Sept 2025 – Dec 2025",
   },
   {
     id: 3,
@@ -113,5 +123,6 @@ export const projects: Project[] = [
     githubLink: "https://github.com/ramji023/FastFingers",
     liveLink: "https://fast-fingers-pi.vercel.app/",
     status: "Completed",
+    date: "Apr 2025 - May 2025",
   },
 ];

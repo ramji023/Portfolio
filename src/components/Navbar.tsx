@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
@@ -18,9 +19,9 @@ export default function NavBar() {
         </div>
 
         <div className="hidden md:flex items-center gap-6 text-sm">
-          <a href="#projects" className="hover:underline hover:text-blue-500">
+          <Link to="work" className="hover:underline hover:text-blue-500">
             Projects
-          </a>
+          </Link>
           <a href="#skills" className="hover:underline hover:text-blue-500">
             Skills
           </a>
