@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { type Project } from "../projects/Projects";
-import { ExternalLink, Eye, MoveUpRight } from "lucide-react";
+import { ExternalLink, Eye } from "lucide-react";
 
 const ProjectCard = ({ project }: { project: Project }) => {
   const navigate = useNavigate();

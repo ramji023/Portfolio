@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function NavBar() {
   return (
@@ -19,18 +19,39 @@ export default function NavBar() {
         </div>
 
         <div className="hidden md:flex items-center gap-6 text-sm">
-          <Link to="work" className="hover:underline hover:text-blue-500">
+          <NavLink
+            to="work"
+            className={({ isActive }) =>
+              isActive
+                ? "underline text-blue-500"
+                : "hover:underline hover:text-blue-500"
+            }
+          >
             Projects
-          </Link>
-          <a href="#skills" className="hover:underline hover:text-blue-500">
+          </NavLink>
+          <NavLink
+            to="skills"
+            className={({ isActive }) =>
+              isActive
+                ? "underline text-blue-500"
+                : "hover:underline hover:text-blue-500"
+            }
+          >
             Skills
-          </a>
-          <a href="#contact" className="hover:underline hover:text-blue-500">
+          </NavLink>
+          <NavLink
+            to="contact"
+            className={({ isActive }) =>
+              isActive
+                ? "underline text-blue-500"
+                : "hover:underline hover:text-blue-500"
+            }
+          >
             Contact
-          </a>
+          </NavLink>
           <a
-            href="/resume.pdf"
-            className="px-3 py-1 flex items-center rounded-md border border-slate-200 hover:bg-slate-50 text-sm"
+            href="https://drive.google.com/file/d/10ZHDVM7qvbrlPJtNxGjVZ7YCJFdqcwWM/view?usp=drive_link"
+            className="px-3 py-1 flex items-center rounded-md border border-slate-300 hover:bg-slate-50 text-sm"
             target="_blank"
             rel="noreferrer"
           >
@@ -51,8 +72,11 @@ export default function NavBar() {
 
 // ---------------- UI Pieces ----------------
 function IconLogo() {
+  const navigate = useNavigate()
   return (
-    <div className="w-10 h-10 rounded-xl bg-linear-to-br from-indigo-500 to-blue-400 flex items-center justify-center text-white font-semibold">
+    <div
+    onClick={()=>navigate("/")}
+    className="w-10 cursor-pointer h-10 rounded-xl bg-linear-to-br from-indigo-500 to-blue-400 flex items-center justify-center text-white font-semibold">
       RM
     </div>
   );
