@@ -8,11 +8,11 @@ import { ArrowRight, ChevronLeft, ChevronRight, Link } from "lucide-react";
 export default function Projects() {
   return (
     <>
-      <section className="max-w-6xl mx-auto px-6 py-10">
-        <h2 className="text-4xl font-extrabold text-neutral-800 tracking-[-0.08em]">
+      <section className="max-w-6xl mx-auto px-15 py-10">
+        <h2 className="text-4xl font-extrabold tracking-[-0.08em]">
           My Projects
         </h2>
-        <p className="mt-3 text-lg text-neutral-700 tracking-[-0.03em]">
+        <p className="mt-3 text-lg text-text-secondary tracking-[-0.03em]">
           A collection of work I’ve built — frontend, backend, real-time
           systems, and more. Each project reflects my focus on performance,
           scalability, and clean design. From idea to deployment, these works
@@ -49,15 +49,17 @@ function ProjectCard({ project }: { project: Project }) {
     >
       {/* STATUS BADGE */}
       <div className="flex justify-between items-start mb-4">
-        <h3 className="text-3xl font-bold">{project.title}</h3>
-        <span className="text-neutral-500 tracking-[0.03em]">
+        <h3 className="text-3xl font-bold bg-clip-text text-transparent bg-linear-to-r from-indigo-600 to-sky-400">
+          {project.title}
+        </h3>
+        <span className="text-text-primary tracking-[0.03em]">
           {project.date}
         </span>
       </div>
 
       {/* PROJECT DESCRIPTION */}
       <div className="mb-6">
-        <p className="text-slate-600 leading-relaxed text-lg">
+        <p className="text-text-secondary leading-relaxed text-lg">
           {project.description}
         </p>
       </div>
@@ -107,8 +109,8 @@ function ProjectCard({ project }: { project: Project }) {
                   onClick={() => setCurrentImage(index)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
                     currentImage === index
-                      ? "bg-white w-8"
-                      : "bg-white/50 hover:bg-white/75"
+                      ? "bg-primary w-8"
+                      : "bg-primary/50 hover:bg-primary/75"
                   }`}
                   aria-label={`Go to image ${index + 1}`}
                 />
@@ -124,10 +126,10 @@ function ProjectCard({ project }: { project: Project }) {
           {project.tech.map((tech) => (
             <div
               key={tech}
-              className="flex cursor-pointer items-center gap-2 px-3 py-2 rounded-md border border-black/10 hover:bg-black/5 transition-colors duration-200"
+             className="cursor-pointer flex items-center gap-4 px-4 py-2 text-text-primary bg-secondary-bg rounded-lg border border-border-DEFAULT hover:scale-[1.02] transition-transform "
             >
               <i className={`${techIcons[tech]} text-2xl`}></i>
-              <span className="text-sm text-neutral-600 font-medium">
+              <span className="text-sm">
                 {tech}
               </span>
             </div>
@@ -141,7 +143,7 @@ function ProjectCard({ project }: { project: Project }) {
           <a
             href={project.liveLink}
             target="_blank"
-            className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-indigo-600 text-white shadow-md hover:scale-[1.02] transition-transform"
+            className="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-btn-primary btn-primary-hover text-btn-primary-text cursor-pointer hover:scale-[1.02] transition-transform"
           >
             <Link className="w-5 h-5" />
             View Live
@@ -150,10 +152,10 @@ function ProjectCard({ project }: { project: Project }) {
           <a
             href={project.githubLink}
             target="_blank"
-            className="inline-flex items-center gap-2 px-3 py-2 rounded-lg border"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-text-primary hover:bg-surface hover:border-accent shadow-md hover:scale-[1.02] transition-all"
           >
             <i
-              className={`${techIcons["GitHub"]} text-2xl text-neutral-800`}
+              className={`${techIcons["GitHub"]} text-2xl `}
             ></i>
             Github
           </a>

@@ -3,16 +3,16 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 export default function NavBar() {
   return (
-    <header className="w-full sticky top-4 z-40">
-      <nav className="max-w-6xl mx-auto px-6 py-3 bg-white/40 backdrop-blur-md rounded-2xl shadow-sm flex items-center justify-between">
+    <div className="sticky top-4">
+      <nav className="mx-auto px-6 py-3 bg-secondary-bg border-b border-border-DEFAULT backdrop-blur-md rounded-2xl shadow-sm flex items-center justify-between">
         <div className="flex items-center gap-3">
           <IconLogo />
           <div>
             <div className="text-md font-semibold">
-              <span className="bg-clip-text text-slate-900 ">Ram</span> -
-              Full-Stack Web Developer
+              <span className="bg-clip-text ">Ram</span> - Full-Stack Web
+              Developer
             </div>
-            <div className="text-xs text-slate-600">
+            <div className="text-xs text-text-secondary">
               React · Node · PostreSQL · Docker
             </div>
           </div>
@@ -22,9 +22,7 @@ export default function NavBar() {
           <NavLink
             to="work"
             className={({ isActive }) =>
-              isActive
-                ? "underline text-blue-500"
-                : "hover:underline hover:text-blue-500"
+              isActive ? " " : " hover:text-text-hover"
             }
           >
             Projects
@@ -32,9 +30,7 @@ export default function NavBar() {
           <NavLink
             to="skills"
             className={({ isActive }) =>
-              isActive
-                ? "underline text-blue-500"
-                : "hover:underline hover:text-blue-500"
+              isActive ? " " : " hover:text-text-hover"
             }
           >
             Skills
@@ -42,16 +38,14 @@ export default function NavBar() {
           <NavLink
             to="contact"
             className={({ isActive }) =>
-              isActive
-                ? "underline text-blue-500"
-                : "hover:underline hover:text-blue-500"
+              isActive ? " " : " hover:text-text-hover"
             }
           >
             Contact
           </NavLink>
           <a
             href="https://drive.google.com/file/d/10ZHDVM7qvbrlPJtNxGjVZ7YCJFdqcwWM/view?usp=drive_link"
-            className="px-3 py-1 flex items-center rounded-md border border-slate-300 hover:bg-slate-50 text-sm"
+            className="px-3 py-1 flex items-center rounded-md border text-btn-primary-text border-border-DEFAULT bg-btn-primary hover:bg-btn-primary-hover text-sm"
             target="_blank"
             rel="noreferrer"
           >
@@ -66,17 +60,18 @@ export default function NavBar() {
           </button>
         </div>
       </nav>
-    </header>
+    </div>
   );
 }
 
 // ---------------- UI Pieces ----------------
 function IconLogo() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div
-    onClick={()=>navigate("/")}
-    className="w-10 cursor-pointer h-10 rounded-xl bg-linear-to-br from-indigo-500 to-blue-400 flex items-center justify-center text-white font-semibold">
+      onClick={() => navigate("/")}
+      className="w-10 cursor-pointer h-10 rounded-xl bg-linear-to-br from-indigo-500 to-blue-400 flex items-center justify-center text-white font-semibold"
+    >
       RM
     </div>
   );

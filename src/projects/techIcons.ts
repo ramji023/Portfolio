@@ -69,4 +69,8 @@ export const techIcons: Record<string, string> = {
 
   // --- if chart.js
   "Chart.js": "devicon-chartjs-plain colored",
+
+  // --- testing library ------
+  Jest: "devicon-jest-plain colored",
+  Vitest: "devicon-vitest-plain colored",
 };

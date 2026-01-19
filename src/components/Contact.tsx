@@ -14,7 +14,7 @@ export default function Contact() {
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
         form,
-        import.meta.env.VITE_PUBLIC_KEY
+        import.meta.env.VITE_PUBLIC_KEY,
       )
       .then(
         () => {
@@ -23,14 +23,14 @@ export default function Contact() {
         },
         () => {
           setStatus("Failed to send message. Try again!");
-        }
+        },
       );
   };
 
   return (
-    <section id="contact" className="max-w-6xl mx-auto px-6 py-12">
+    <section className="px-15 py-10">
       <h2 className="text-2xl font-bold">Contact Me</h2>
-      <p className="mt-2 text-slate-600 max-w-xl">
+      <p className="mt-2 text-text-secondary max-w-xl">
         Want to work together? Send me a message.
       </p>
 
@@ -65,13 +65,15 @@ export default function Contact() {
         <div className="md:col-span-2 flex items-center gap-3">
           <button
             type="submit"
-            className="px-4 py-2 rounded-md bg-indigo-600 text-white cursor-pointer"
+            className="px-4 py-2 rounded-md bg-btn-primary btn-primary-hover text-btn-primary-text cursor-pointer hover:scale-[1.02]"
           >
             Send Message
           </button>
-          <div className="text-sm text-slate-500">
+          <div className="text-sm text-text-secondary">
             Or email me at{" "}
-            <span className="font-medium">mramji747@gmail.com</span>
+            <span className="font-medium bg-clip-text text-transparent bg-linear-to-r from-indigo-600 to-sky-400">
+              mramji747@gmail.com
+            </span>
           </div>
         </div>
       </form>

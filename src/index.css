@@ -1,8 +1,30 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
 
 @theme {
-  --default-font-family:"Geist Mono", monospace;
-  --text-primary : 18px;
+  --default-font-family: "Geist Mono", monospace;
+  --text-primary: 18px;
   --leading-primary: 28px;
+  /* background color utility */
+  --color-primary: #121212;
+  --color-secondary-bg: #1a1a1a;
+
+  /* border color utility  */
+  --color-border-DEFAULT: #444444;
+
+  /* Text Colors */
+  --color-text-primary: #e0e0e0;
+  --color-text-secondary: #b0b0b0;
+  --color-text-muted: #808080;
+
+  /* Hover States - Add these */
+  --color-text-hover: #ffffff;
+  --color-accent: #888888; /* Links/Interactive */
+  --color-accent-hover: #b0b0b0; /* Lighter accent for hover */
+
+  /* primary button  */
+  --color-btn-primary: #3b82f6;           /* Blue 600 */
+  --color-btn-primary-hover: #2563eb;     /* Blue 700 */
+  --color-btn-primary-text: #ffffff;
+  
 }

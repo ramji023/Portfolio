@@ -47,4 +47,8 @@ export const skills = [
   "Vite",
   "Next.js",
   "Figma",
+
+  // Testing packages
+  "Jest",
+  "Vitest",
 ];

@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { techIcons } from "../projects/techIcons";
 export default function Hero() {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-10">
+    <section className="px-15 py-10">
       <motion.div
         initial={{ opacity: 0, y: 6 }}
         animate={{ opacity: 1, y: 0 }}
@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* first grid  */}
           <div>
-            <h1 className="text-4xl md:text-4xl font-extrabold leading-tight">
+            <h1 className="text-3xl font-extrabold leading-tight">
               Hi, I’m Ram Ji —{" "}
               <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-600 to-sky-400">
                 Full-Stack Web Developer
@@ -20,31 +20,32 @@ export default function Hero() {
               building interactive, fast web apps
             </h1>
 
-            <p className="mt-4 text-slate-600 max-w-xl">
+            <p className="mt-4 text-text-secondary max-w-xl text-sm">
               I build full-stack applications end-to-end — crafting UI with
               React and Tailwind, developing backend APIs with Node.js, managing
-              databases, and deploying production-ready apps.
+              databases, and deploying production-ready apps using Docker,
+              CI/CD.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="https://github.com/ramji023"
                 target="_blank"
-                className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-indigo-600 text-white shadow-md hover:scale-[1.02] transition-transform"
+                className="inline-flex text-md items-center gap-2 px-4 py-2 rounded-md border border-border-DEFAULT bg-btn-primary hover:bg-btn-primary-hover text-btn-primary-text shadow-md hover:scale-[1.02] transition-transform"
               >
-                <i className={`${techIcons["GitHub"]} text-2xl text-white`}></i>
+                <i className={`${techIcons["GitHub"]} text-xl text-white`}></i>
                 View My Github
                 <ArrowRight className="w-5 h-5" />
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 px-3 py-2 rounded-lg border"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-text-primary hover:bg-surface hover:border-accent shadow-md hover:scale-[1.02] transition-all"
               >
                 Contact Me
               </a>
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-3 text-sm text-slate-700">
+            <div className="mt-8 flex flex-wrap gap-3 text-sm">
               {[
                 "Open to work",
                 "Available for freelance",
@@ -53,7 +54,7 @@ export default function Hero() {
               ].map((tag) => (
                 <div
                   key={tag}
-                  className="px-3 py-2 bg-slate-100 rounded-lg border border-slate-200 transition hover:bg-slate-200"
+                  className="px-4 py-2 text-text-primary bg-secondary-bg rounded-lg border border-border-DEFAULT hover:scale-[1.02] transition-transform "
                 >
                   {tag}
                 </div>
@@ -66,14 +67,14 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="relative w-100 h-100 md:w-100 md:h-100"
+              className="relative w-90 md:h-90"
             >
-              <div className="absolute inset-0 rounded-full bg-linear-to-tr from-indigo-200/40 to-sky-200/40 blur-xl" />
+              <div className="absolute inset-0 rounded-full blur-xl" />
 
               <img
-                src="/avatar.png"
+                src="https://res.cloudinary.com/dqr7qcgch/image/upload/v1768830257/Gemini_Generated_Image_8ht9718ht9718ht9_k5gnam.png"
                 alt="Ram Ji Avatar"
-                className="relative w-full h-full object-cover rounded-full border-4 border-white shadow-xl"
+                className="relative w-full h-full object-cover rounded-full border-2 border-border-DEFAULT shadow-xl"
               />
             </motion.div>
           </div>
