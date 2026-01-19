@@ -72,7 +72,7 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-full blur-xl" />
 
               <img
-                src="https://res.cloudinary.com/dqr7qcgch/image/upload/v1768830257/Gemini_Generated_Image_8ht9718ht9718ht9_k5gnam.png"
+                src="https://res.cloudinary.com/dqr7qcgch/image/upload/v1768841921/Gemini_Generated_Image_juxacujuxacujuxa_tdjbk6.png"
                 alt="Ram Ji Avatar"
                 className="relative w-full h-full object-cover rounded-full border-2 border-border-DEFAULT shadow-xl"
               />
