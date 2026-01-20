@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { techIcons } from "../projects/techIcons";
+import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <section className="px-15 py-10">
@@ -37,12 +38,12 @@ export default function Hero() {
                 View My Github
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-text-primary hover:bg-surface hover:border-accent shadow-md hover:scale-[1.02] transition-all"
               >
                 Contact Me
-              </a>
+              </Link>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3 text-sm">

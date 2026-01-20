@@ -6,7 +6,7 @@ export default function NavBar() {
     <div className="sticky top-4">
       <nav className="mx-auto px-6 py-3 bg-secondary-bg border-b border-border-DEFAULT backdrop-blur-md rounded-2xl shadow-sm flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <IconLogo />
+          {/* <IconLogo /> */}
           <div>
             <div className="text-md font-semibold">
               <span className="bg-clip-text ">Ram</span> - Full-Stack Web
