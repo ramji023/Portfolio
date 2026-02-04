@@ -28,11 +28,21 @@ export default function Contact() {
   };
 
   return (
-    <section className="px-15 py-10">
-      <h2 className="text-2xl font-bold">Contact Me</h2>
-      <p className="mt-2 text-text-secondary max-w-xl">
+    <section
+    id="contact"
+    className="px-15 py-10">
+      <div className="flex items-center gap-2 py-5">
+        <h2 className="text-3xl font-bold whitespace-nowrap">
+          <span className="text-text-other/80">03.</span> Ping Me
+        </h2>
+
+        {/*straight line */}
+        <div className="h-px w-full bg-text-muted"></div>
+      </div>
+
+      {/* <p className="mt-2 text-text-secondary max-w-xl">
         Want to work together? Send me a message.
-      </p>
+      </p> */}
 
       <form onSubmit={sendEmail} className="mt-6 grid gap-3 md:grid-cols-2">
         <input
@@ -65,13 +75,13 @@ export default function Contact() {
         <div className="md:col-span-2 flex items-center gap-3">
           <button
             type="submit"
-            className="px-4 py-2 rounded-md bg-btn-primary btn-primary-hover text-btn-primary-text cursor-pointer hover:scale-[1.02]"
+            className="px-4 py-2 rounded-md border border-border-other text-text-other cursor-pointer hover:scale-[1.02]"
           >
             Send Message
           </button>
           <div className="text-sm text-text-secondary">
             Or email me at{" "}
-            <span className="font-medium bg-clip-text text-transparent bg-linear-to-r from-indigo-600 to-sky-400">
+            <span className="font-medium text-text-other">
               mramji747@gmail.com
             </span>
           </div>

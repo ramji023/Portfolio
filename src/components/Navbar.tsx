@@ -3,14 +3,19 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 export default function NavBar() {
   return (
-    <div className="sticky top-4">
-      <nav className="mx-auto px-6 py-3 bg-secondary-bg border-b border-border-DEFAULT backdrop-blur-md rounded-2xl shadow-sm flex items-center justify-between">
+    <div className="sticky top-4 z-50">
+      <nav className="mx-auto px-6 py-3 bg-secondary-bg border-b border-border-other backdrop-blur-md rounded-2xl shadow-sm flex items-center justify-between">
         <div className="flex items-center gap-3">
           {/* <IconLogo /> */}
           <div>
             <div className="text-md font-semibold">
-              <span className="bg-clip-text ">Ram</span> - Full-Stack Web
-              Developer
+              <a
+                href="#hero"
+                className="bg-clip-text text-text-other cursor-pointer"
+              >
+                Ram
+              </a>{" "}
+              - Full-Stack Web Developer
             </div>
             <div className="text-xs text-text-secondary">
               React · Node · PostreSQL · Docker
@@ -19,33 +24,12 @@ export default function NavBar() {
         </div>
 
         <div className="hidden md:flex items-center gap-6 text-sm">
-          <NavLink
-            to="work"
-            className={({ isActive }) =>
-              isActive ? " " : " hover:text-text-hover"
-            }
-          >
-            Projects
-          </NavLink>
-          <NavLink
-            to="skills"
-            className={({ isActive }) =>
-              isActive ? " " : " hover:text-text-hover"
-            }
-          >
-            Skills
-          </NavLink>
-          <NavLink
-            to="contact"
-            className={({ isActive }) =>
-              isActive ? " " : " hover:text-text-hover"
-            }
-          >
-            Contact
-          </NavLink>
+          <a href="#projects" className="hover:text-text-other">Projects</a>
+          <a href="#skills" className="hover:text-text-other">Skills</a>
+          <a href="#contact" className="hover:text-text-other">Contact</a>
           <a
             href="https://drive.google.com/file/d/10ZHDVM7qvbrlPJtNxGjVZ7YCJFdqcwWM/view?usp=drive_link"
-            className="px-3 py-1 flex items-center rounded-md border text-btn-primary-text border-border-DEFAULT bg-btn-primary hover:bg-btn-primary-hover text-sm"
+            className="px-3 py-1 flex items-center rounded-md border text-text-other border-border-other text-sm hover:scale-110 transition"
             target="_blank"
             rel="noreferrer"
           >

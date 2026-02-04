@@ -27,4 +27,7 @@
   --color-btn-primary-hover: #2563eb;     /* Blue 700 */
   --color-btn-primary-text: #ffffff;
   
+  /* another text,border color variant  */
+  --color-text-other : #64ffda;
+  --color-border-other: #64ffda
 }
