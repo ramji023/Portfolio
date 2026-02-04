@@ -1,5 +1,4 @@
 import { ArrowUpRight } from "lucide-react";
-import { NavLink, useNavigate } from "react-router-dom";
 
 export default function NavBar() {
   return (
@@ -49,14 +48,14 @@ export default function NavBar() {
 }
 
 // ---------------- UI Pieces ----------------
-function IconLogo() {
-  const navigate = useNavigate();
-  return (
-    <div
-      onClick={() => navigate("/")}
-      className="w-10 cursor-pointer h-10 rounded-xl bg-linear-to-br from-indigo-500 to-blue-400 flex items-center justify-center text-white font-semibold"
-    >
-      RM
-    </div>
-  );
-}
+// function IconLogo() {
+//   const navigate = useNavigate();
+//   return (
+//     <div
+//       onClick={() => navigate("/")}
+//       className="w-10 cursor-pointer h-10 rounded-xl bg-linear-to-br from-indigo-500 to-blue-400 flex items-center justify-center text-white font-semibold"
+//     >
+//       RM
+//     </div>
+//   );
+// }

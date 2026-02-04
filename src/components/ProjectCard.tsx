@@ -1,6 +1,5 @@
-import { useNavigate } from "react-router-dom";
 import { type Project } from "../projects/Projects";
-import { ExternalLink, Eye, Github } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 const ProjectCard = ({
   project,
@@ -9,7 +8,6 @@ const ProjectCard = ({
   project: Project;
   index: number;
 }) => {
-  const navigate = useNavigate();
   const isEven = index % 2 === 0;
   return (
     <div className="relative w-full py-16">
