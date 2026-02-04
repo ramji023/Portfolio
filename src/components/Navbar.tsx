@@ -27,7 +27,7 @@ export default function NavBar() {
           <a href="#skills" className="hover:text-text-other">Skills</a>
           <a href="#contact" className="hover:text-text-other">Contact</a>
           <a
-            href="https://drive.google.com/file/d/10ZHDVM7qvbrlPJtNxGjVZ7YCJFdqcwWM/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1GRe9fmVgBQm6GFnhuU6GQnNUNUuNDLKN/view?usp=sharing"
             className="px-3 py-1 flex items-center rounded-md border text-text-other border-border-other text-sm hover:scale-110 transition"
             target="_blank"
             rel="noreferrer"
