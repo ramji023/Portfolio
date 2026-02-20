@@ -19,7 +19,7 @@ export default function Dashboard() {
           Tailwind & Motion
         </footer>
 
-        <div className="fixed bottom-0 left-10 flex flex-col justify-center items-center text-text-muted">
+        <div className="fixed bottom-0 left-5 md:left-10 flex flex-col justify-center items-center text-text-muted">
           <div className="flex flex-col justify-center items-center gap-6 ">
             <a
               href="https://github.com/ramji023"
@@ -46,7 +46,7 @@ export default function Dashboard() {
           <div className="w-px h-60 bg-text-muted mt-2"></div>
         </div>
 
-        <div className="fixed bottom-0 right-10 flex flex-col justify-center items-center text-text-muted">
+        <div className="fixed bottom-0 right-5 md:right-10 flex flex-col justify-center items-center text-text-muted">
           <div className="flex flex-col justify-center items-center gap-8 ">
             <a
               href="mailto:mramji747@gmail.com"

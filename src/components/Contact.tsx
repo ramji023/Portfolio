@@ -30,14 +30,14 @@ export default function Contact() {
   return (
     <section
     id="contact"
-    className="px-15 py-10">
+    className="px-4 md:px-15 py-10">
       <div className="flex items-center gap-2 py-5">
-        <h2 className="text-3xl font-bold whitespace-nowrap">
+        <h2 className="text-2xl md:text-3xl font-bold md:whitespace-nowrap">
           <span className="text-text-other/80">03.</span> Ping Me
         </h2>
 
         {/*straight line */}
-        <div className="h-px w-full bg-text-muted"></div>
+        <div className="hidden md:block h-px w-full bg-text-muted"></div>
       </div>
 
       {/* <p className="mt-2 text-text-secondary max-w-xl">
@@ -75,7 +75,7 @@ export default function Contact() {
         <div className="md:col-span-2 flex items-center gap-3">
           <button
             type="submit"
-            className="px-4 py-2 rounded-md border border-border-other text-text-other cursor-pointer hover:scale-[1.02]"
+            className="px-3 py-1 md:px-4 md:py-2 rounded-md border border-border-other text-text-other cursor-pointer hover:scale-[1.02]"
           >
             Send Message
           </button>

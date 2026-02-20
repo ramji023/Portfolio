@@ -10,8 +10,8 @@ const ProjectCard = ({
 }) => {
   const isEven = index % 2 === 0;
   return (
-    <div className="relative w-full py-16">
-      <div className="relative grid lg:grid-cols-12 items-center">
+    <div className="relative w-full py-8 md:py-16">
+      <div className="relative grid grid-cols-1 lg:grid-cols-12 items-center gap-4">
         {/* IMAGE SIDE */}
         <div
           className={`
@@ -23,7 +23,7 @@ const ProjectCard = ({
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-[340px] object-cover opacity-80 hover:opacity-100 transition"
+              className="w-full h-[200px] md:h-[340px] object-cover opacity-80 hover:opacity-100 transition"
             />
             <div className="absolute inset-0 mix-blend-multiply pointer-events-none" />
           </div>

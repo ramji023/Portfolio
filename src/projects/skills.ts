@@ -5,6 +5,7 @@ export const skills = [
   "React Query",
   "Zustand",
   "JavaScript",
+  "Go",
   "TypeScript",
   "Axios",
   "Tailwind",

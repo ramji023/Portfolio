@@ -5,14 +5,14 @@ export default function ProjectSection() {
   return (
     <section
     id="projects"
-    className="px-15 py-10">
+    className="px-4 md:px-15 py-10">
       <div className="flex items-center gap-2 py-5">
-        <h2 className="text-3xl font-bold whitespace-nowrap">
+        <h2 className="text-2xl  md:text-3xl font-bold md:whitespace-nowrap">
           <span className="text-text-other/80">01.</span>Things I’ve Built
         </h2>
 
         {/*straight line */}
-        <div className="h-px w-full bg-text-muted"></div>
+        <div className="hidden md:block h-px w-full bg-text-muted"></div>
       </div>
 
       {/* Simple vertical stack */}

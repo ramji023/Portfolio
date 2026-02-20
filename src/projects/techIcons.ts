@@ -12,6 +12,8 @@ export const techIcons: Record<string, string> = {
 
   TypeScript: "devicon-typescript-plain colored",
 
+  Go: "devicon-go-plain colored",
+
   Axios: "devicon-axios-plain colored",
 
   Tailwind: "devicon-tailwindcss-plain colored",
