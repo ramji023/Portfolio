@@ -17,7 +17,6 @@ export default function NavBar() {
               <div className="text-xs text-text-secondary">React · Node · PostgreSQL · Docker</div>
             </div>
           </div>
-
           <div className="hidden md:flex items-center gap-6 text-sm">
             <a href="#projects" className="hover:text-text-other">Projects</a>
             <a href="#skills" className="hover:text-text-other">Skills</a>
