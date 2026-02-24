@@ -57,7 +57,7 @@ export default function Dashboard() {
         transition
       "
             >
-              mramji747@gmail.com
+              mishraramji039@gmail.com
             </a>
           </div>
           <div className="w-px h-60 bg-text-muted mt-2"></div>
