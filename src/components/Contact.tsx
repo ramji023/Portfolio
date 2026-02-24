@@ -82,7 +82,7 @@ export default function Contact() {
           <div className="text-sm text-text-secondary">
             Or email me at{" "}
             <span className="font-medium text-text-other">
-              mramji747@gmail.com
+              mishraramji039@gmail.com
             </span>
           </div>
         </div>
