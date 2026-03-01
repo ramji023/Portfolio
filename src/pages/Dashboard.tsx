@@ -3,23 +3,24 @@ import Contact from "../components/Contact";
 import SkillsSection from "../components/Skills";
 import ProjectSection from "../components/ProjectSection";
 import { Github, Linkedin, Twitter } from "lucide-react";
+import Experience from "../components/Experience";
 export default function Dashboard() {
   return (
     <>
       <main className="pt-6">
-        <div className="px-10 py-5">
+        <div className="px-5 md:px-10 py-5">
           <Hero />
+          <Experience />
           <ProjectSection />
           <SkillsSection />
           <Contact />
+          <footer className="mt-12 py-8 text-center text-sm text-slate-500">
+            © {new Date().getFullYear()} Ram - Built with React, TypeScript,
+            Tailwind & Motion
+          </footer>
         </div>
 
-        <footer className="mt-12 py-8 text-center text-sm text-slate-500">
-          © {new Date().getFullYear()} Ram - Built with React, TypeScript,
-          Tailwind & Motion
-        </footer>
-
-        <div className="fixed bottom-0 left-5 md:left-10 flex flex-col justify-center items-center text-text-muted">
+        <div className="hidden md:flex fixed bottom-0 left-2 md:left-10 flex-col justify-center items-center text-text-muted">
           <div className="flex flex-col justify-center items-center gap-6 ">
             <a
               href="https://github.com/ramji023"
@@ -46,7 +47,7 @@ export default function Dashboard() {
           <div className="w-px h-60 bg-text-muted mt-2"></div>
         </div>
 
-        <div className="fixed bottom-0 right-5 md:right-10 flex flex-col justify-center items-center text-text-muted">
+        <div className="hidden fixed bottom-0 right-2 md:right-10 md:flex flex-col justify-center items-center text-text-muted">
           <div className="flex flex-col justify-center items-center gap-8 ">
             <a
               href="mailto:mramji747@gmail.com"

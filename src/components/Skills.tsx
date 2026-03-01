@@ -6,7 +6,7 @@ export default function SkillsSection() {
     <section id="skills" className="px-4 md:px-15 py-10">
       <div className="flex items-center justify-center gap-2 py-5">
         <h2 className="text-2xl md:text-3xl font-bold md:whitespace-nowrap">
-          <span className="text-text-other/80">02.</span> Technologies and tools
+          <span className="text-text-other/80">03.</span> Technologies and tools
           I use frequently
         </h2>
 

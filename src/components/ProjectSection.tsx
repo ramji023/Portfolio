@@ -3,12 +3,10 @@ import { projects } from "../projects/Projects";
 
 export default function ProjectSection() {
   return (
-    <section
-    id="projects"
-    className="px-4 md:px-15 py-10">
+    <section id="projects" className="px-4 md:px-15 py-7 md:py-10">
       <div className="flex items-center gap-2 py-5">
-        <h2 className="text-2xl  md:text-3xl font-bold md:whitespace-nowrap">
-          <span className="text-text-other/80">01.</span>Things I’ve Built
+        <h2 className="text-lg  md:text-3xl font-bold  md:whitespace-nowrap">
+          <span className="text-text-other/80">02.</span>Things I’ve Built
         </h2>
 
         {/*straight line */}
@@ -16,7 +14,7 @@ export default function ProjectSection() {
       </div>
 
       {/* Simple vertical stack */}
-      <div className="mt-10 space-y-6 scroll-smooth">
+      <div className="mt-10 md:space-y-6 scroll-smooth">
         {projects.map((p, i) => (
           <ProjectCard key={p.id} project={p} index={i} />
         ))}
