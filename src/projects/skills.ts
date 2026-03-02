@@ -52,4 +52,7 @@ export const skills = [
   // Testing packages
   "Jest",
   "Vitest",
+
+  "Prometheus",
+  "Grafana",
 ];

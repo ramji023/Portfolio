@@ -1,5 +1,6 @@
 import { type Project } from "../projects/Projects";
 import { ExternalLink, Github } from "lucide-react";
+import { techIcons } from "../projects/techIcons";
 
 const ProjectCard = ({
   project,
@@ -55,12 +56,20 @@ const ProjectCard = ({
           </div>
 
           <div
-            className={`flex flex-row flex-wrap gap-x-4 mt-4 ${
+            className={`flex flex-row flex-wrap gap-x-1 gap-y-1 mt-4 ${
               isEven ? "justify-start" : "justify-end"
             }`}
           >
-            {project.tech.map((p) => (
-              <span className="text-xs md:text-sm text-text-muted">{p}</span>
+            {project.tech.slice(0,8).map((p) => (
+              <>
+                <div
+                  key={p}
+                  className="cursor-pointer flex items-center gap-3 text-xs px-2.5 py-1.5 text-text-primary bg-secondary-bg rounded-lg border border-border-DEFAULT hover:border-border-other hover:text-text-other hover:bg-text-other/10 transition-transform "
+                >
+                  <i className={`${techIcons[p]} text-xs`}></i>
+                  <span className="text-xs">{p}</span>
+                </div>
+              </>
             ))}
           </div>
 

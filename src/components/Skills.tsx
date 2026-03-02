@@ -18,7 +18,7 @@ export default function SkillsSection() {
         {skills.map((s) => (
           <div
             key={s}
-            className="cursor-pointer flex items-center gap-3 text-sm md:text-base md:gap-4  px-2.5 md:px-4 py-1.5 md:py-2 text-text-primary bg-secondary-bg rounded-lg border border-border-DEFAULT hover:scale-[1.02] hover:border-border-other hover:text-text-other hover:bg-text-other/10 transition-transform "
+            className="cursor-pointer flex items-center gap-3 text-sm md:text-base md:gap-4 px-2.5 md:px-4 py-1.5 md:py-2 text-text-primary bg-secondary-bg rounded-lg border border-border-DEFAULT hover:scale-[1.02] hover:border-border-other hover:text-text-other hover:bg-text-other/10 transition-transform "
           >
             <i className={`${techIcons[s]} text-sm md:text-2xl`}></i>
             <span className="text-sm">{s}</span>

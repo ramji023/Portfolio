@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Github, Linkedin, Mail, MoveUpRight, Twitter } from "lucide-react";
 
 export default function Contact() {
   const [status, setStatus] = useState("");
@@ -73,15 +74,42 @@ export default function Contact() {
         <div className="md:col-span-2 flex items-center gap-3">
           <button
             type="submit"
-            className="px-2 py-1 md:px-4 md:py-2 text-sm md:text-base rounded-md border border-border-other text-text-other cursor-pointer hover:scale-[1.02]"
+            className="px-2.5 py-1.5 md:px-4 md:py-2 text-sm md:text-base flex items-center justify-center gap-2 rounded-md border border-border-other text-text-other cursor-pointer hover:scale-[1.02]"
           >
             Send Message
+            <MoveUpRight className="w-5 h-5" />
           </button>
           <div className="text-xs md:text-sm text-text-secondary">
-            Or email me at{" "}
-            <span className="font-medium text-text-other">
-              mishraramji039@gmail.com
-            </span>
+            Or Connect with me {/* social links  */}
+            <div className="flex flex-row justify-start items-center gap-3 text-text-muted">
+              <a
+                href="mailto:mramji747@gmail.com"
+                className="cursor-pointer hover:scale-110 w-7 h-7 rounded-full hover:text-text-other flex justify-center items-center"
+              >
+                <Mail className="w-5 h-5" />
+              </a>
+              <a
+                href="https://github.com/ramji023"
+                target="_blank"
+                className="cursor-pointer hover:scale-110 w-7 h-7 rounded-full hover:text-text-other flex justify-center items-center"
+              >
+                <Github className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ram-ji-mishra-2081bb25a/"
+                target="_blank"
+                className="cursor-pointer hover:scale-110 w-7 h-7 rounded-full hover:text-text-other flex justify-center items-center"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="https://x.com/ramjimishra001"
+                target="_blank"
+                className="cursor-pointer hover:scale-110 w-7 h-7 rounded-full hover:text-text-other flex justify-center items-center"
+              >
+                <Twitter className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
       </form>

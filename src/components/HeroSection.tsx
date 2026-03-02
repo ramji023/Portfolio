@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight} from "lucide-react";
 import { techIcons } from "../projects/techIcons";
 export default function Hero() {
   return (
@@ -26,19 +26,19 @@ export default function Hero() {
             </h1>
             <div>
               <p className="mt-4 max-w-2xl text-xs md:text-base text-text-secondary">
-                I build full-stack applications end-to-end — crafting UI with
+                I build full-stack applications end-to-end - crafting UI with
                 React and Tailwind, developing backend APIs with Node.js,
                 managing databases, and deploying production-ready apps using
                 Docker, CI/CD.
               </p>
             </div>
           </div>
-
+         
           <div className="mt-6">
             <a
               href="https://github.com/ramji023"
               target="_blank"
-              className="inline-flex text-sm md:text-base items-center gap-2 px-2 md:px-4 py-1 md:py-2 rounded-md border border-border-other text-text-other shadow-md hover:scale-[1.02] transition-transform"
+              className="inline-flex text-sm md:text-base items-center gap-2 px-2.5 md:px-4 py-1.5 md:py-2 rounded-md border border-border-other text-text-other shadow-md hover:scale-[1.02] transition-transform"
             >
               <i
                 className={`${techIcons["GitHub"]} text-lg md:text-xl text-text-other`}
@@ -48,7 +48,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-3 md:text-sm text-xs ">
+          <div className="mt-8 flex flex-wrap gap-3 md:text-sm text-base ">
             {[
               "Open to work",
               "Available for freelance",
@@ -57,7 +57,7 @@ export default function Hero() {
             ].map((tag) => (
               <div
                 key={tag}
-                className="px-2 md:px-4 py-1 md:py-2 text-text-other/80 bg-text-other/10 rounded-4xl hover:scale-[1.02] transition-transform hover:text-text-other"
+                className="px-2.5 md:px-4 py-1.5 md:py-2 text-text-other/80 bg-text-other/10 rounded-4xl hover:scale-[1.02] transition-transform hover:text-text-other"
               >
                 {tag}
               </div>
