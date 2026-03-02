@@ -28,11 +28,9 @@ export default function Contact() {
   };
 
   return (
-    <section
-    id="contact"
-    className="px-4 md:px-15 py-10">
-      <div className="flex items-center gap-2 py-5">
-        <h2 className="text-2xl md:text-3xl font-bold md:whitespace-nowrap">
+    <section id="contact" className="px-4 md:px-15 py-10">
+      <div className="flex items-center gap-2 py-3">
+        <h2 className="text-lg md:text-3xl font-bold md:whitespace-nowrap">
           <span className="text-text-other/80">04.</span> Ping Me
         </h2>
 
@@ -47,26 +45,26 @@ export default function Contact() {
       <form onSubmit={sendEmail} className="mt-6 grid gap-3 md:grid-cols-2">
         <input
           name="name"
-          className="p-3 rounded-md border"
+          className="p-2 md:p-3 rounded-md border"
           placeholder="Your name"
           required
         />
         <input
           name="email"
-          className="p-3 rounded-md border"
+          className="p-2 md:p-3 rounded-md border"
           placeholder="Your email"
           type="email"
           required
         />
         <input
           name="title"
-          className="p-3 rounded-md border md:col-span-2"
+          className="p-2 md:p-3 rounded-md border md:col-span-2"
           placeholder="Subject"
           required
         />
         <textarea
           name="message"
-          className="p-3 rounded-md border md:col-span-2"
+          className="p-2 md:p-3 rounded-md border md:col-span-2"
           rows={5}
           placeholder="Message"
           required
@@ -75,11 +73,11 @@ export default function Contact() {
         <div className="md:col-span-2 flex items-center gap-3">
           <button
             type="submit"
-            className="px-3 py-1 md:px-4 md:py-2 rounded-md border border-border-other text-text-other cursor-pointer hover:scale-[1.02]"
+            className="px-2 py-1 md:px-4 md:py-2 text-sm md:text-base rounded-md border border-border-other text-text-other cursor-pointer hover:scale-[1.02]"
           >
             Send Message
           </button>
-          <div className="text-sm text-text-secondary">
+          <div className="text-xs md:text-sm text-text-secondary">
             Or email me at{" "}
             <span className="font-medium text-text-other">
               mishraramji039@gmail.com

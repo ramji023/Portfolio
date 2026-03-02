@@ -12,7 +12,7 @@ const ProjectCard = ({
   return (
     <div className="relative w-full py-8 md:py-16">
       <div className="relative grid grid-cols-1 lg:grid-cols-12 items-center gap-4">
-        {/* IMAGE SIDE */}
+        {/* image side*/}
         <div
           className={`
             lg:col-span-7
@@ -40,14 +40,16 @@ const ProjectCard = ({
             ${isEven ? "lg:left-0 text-left" : "lg:right-0 text-right"}
           `}
         >
-          <p className="text-text-other/80 text-sm mb-1">Featured Project</p>
+          <p className="text-text-other/80 text-xs md:text-sm mb-1">
+            Featured Project
+          </p>
 
-          <h3 className="text-3xl font-semibold mb-4 text-text-primary">
+          <h3 className="text-lg md:text-3xl font-semibold mb-2 md:mb-4 text-text-primary">
             {project.heading}
           </h3>
 
           <div className="bg-gray-900 p-6">
-            <p className="text-text-secondary line-clamp-6 shadow-2xl text-md ">
+            <p className="text-text-secondary line-clamp-6 shadow-2xl text-sm md:text-base">
               {project.description}
             </p>
           </div>
@@ -58,7 +60,7 @@ const ProjectCard = ({
             }`}
           >
             {project.tech.map((p) => (
-              <span className="text-sm text-text-muted">{p}</span>
+              <span className="text-xs md:text-sm text-text-muted">{p}</span>
             ))}
           </div>
 
