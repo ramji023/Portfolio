@@ -22,7 +22,7 @@ export default function NavBar() {
             <a href="#skills" className="hover:text-text-other">Skills</a>
             <a href="#contact" className="hover:text-text-other">Contact</a>
             <a
-              href="https://drive.google.com/file/d/1dQiPEnJTFPT8NfyFmHkCIKzu_LWkIGea/view?usp=drive_link"
+              href="https://drive.google.com/file/d/10kWK3IEGesgLiUlqGfIhBlle87n6FTe-/view?usp=drive_link"
               className="px-3 py-1 flex items-center rounded-md border text-text-other border-border-other text-sm hover:scale-110 transition"
               target="_blank" rel="noreferrer"
             >
