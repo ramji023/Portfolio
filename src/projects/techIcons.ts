@@ -1,4 +1,8 @@
 export const techIcons: Record<string, string> = {
+  // ---- programming language ----
+  "C++": "devicon-cplusplus-plain colored",
+  Python: "devicon-python-plain colored",
+
   // --- Frontend ---
   React: "devicon-react-original colored",
   "React.js": "devicon-react-original colored",

@@ -1,18 +1,23 @@
 export const skills = [
+  // programming languages
+  "C++",
+  "Python",
+  "Go",
+  "JavaScript",
+  "TypeScript",
   // Frontend
+  "HTML",
+  "CSS",
   "React",
+  "Next.js",
+  "Tailwind CSS",
   "React Router",
   "React Query",
   "Zustand",
-  "JavaScript",
-  "Go",
-  "TypeScript",
   "Axios",
-  "Tailwind",
-  "Tailwind CSS",
-  "HTML",
-  "CSS",
   "Framer Motion",
+  "Redux",
+  "Figma",
 
   // Backend
   "Node",
@@ -43,16 +48,11 @@ export const skills = [
   "pnpm",
   "yarn",
 
-  // Other tools
-  "Redux",
-  "Vite",
-  "Next.js",
-  "Figma",
-
   // Testing packages
   "Jest",
   "Vitest",
 
+  // monitoring tools
   "Prometheus",
   "Grafana",
 ];
