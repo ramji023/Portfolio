@@ -12,7 +12,7 @@ export default function NavBar() {
             <div>
               <div className="text-md font-semibold">
                 <a href="#hero" className="bg-clip-text text-text-other cursor-pointer">Ram</a>{" "}
-                - Full-Stack Web Developer
+                - Full-Stack Web Developer <span className="text-xs font-normal text-text-other">@ Airwix Technologies</span>
               </div>
               <div className="text-xs text-text-secondary">React · Node · PostgreSQL · Docker</div>
             </div>
@@ -22,7 +22,7 @@ export default function NavBar() {
             <a href="#skills" className="hover:text-text-other">Skills</a>
             <a href="#contact" className="hover:text-text-other">Contact</a>
             <a
-              href="https://drive.google.com/file/d/10kWK3IEGesgLiUlqGfIhBlle87n6FTe-/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1aLh_Si0_A0CBD5AqNrAJaZOPmxgSZOLC/view?usp=sharing"
               className="px-3 py-1 flex items-center rounded-md border text-text-other border-border-other text-sm hover:scale-110 transition"
               target="_blank" rel="noreferrer"
             >

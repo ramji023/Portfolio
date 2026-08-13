@@ -31,6 +31,38 @@ function ExperienceCard() {
         >
           {/* Job Title */}
           <h3 className="text-base md:text-xl font-semibold text-text-other">
+            Full-Stack Developer
+          </h3>
+
+          {/* Company + Duration */}
+          <p className="text-xs md:text-sm text-gray-400 mt-1">
+            Airwix Technologies •{" "}
+            <span className="text-text-other">Apr 2026 – Now</span>
+          </p>
+
+          {/* Description */}
+          <ul className="mt-4 text-sm md:text-base space-y-2 text-gray-300 list-disc list-inside">
+            <li>
+              Developed AI agents using MCP and LLMs to automate ERP and HRMS processes, enabling intelligent task
+              execution and data retrieval.
+            </li>
+            <li>
+              Engineered a real-time project management system with Kanban boards, task assignments, workflow automation,
+              and role-based access control.
+            </li>
+            <li>
+              Optimized backend performance by moving compute-intensive and long-running operations from the main thread to asynchronous worker queues.
+            </li>
+          </ul>
+        </div>
+        {/* Experience Card */}
+        <div
+          className="border border-border-other/40 rounded-lg p-6 
+                  bg-black/40 backdrop-blur-sm 
+                  hover:border-border-other transition duration-300"
+        >
+          {/* Job Title */}
+          <h3 className="text-base md:text-xl font-semibold text-text-other">
             MERN Stack Developer
           </h3>
 
