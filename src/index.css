@@ -1,33 +1,107 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
 
 @theme {
-  --default-font-family: "Geist Mono", monospace;
-  --text-primary: 18px;
-  --leading-primary: 28px;
-  /* background color utility */
-  --color-primary: #121212;
-  --color-secondary-bg: #1a1a1a;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Newsreader", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-handwritten: "Caveat", cursive;
+}
 
-  /* border color utility  */
-  --color-border-DEFAULT: #444444;
+:root {
+  --bg-primary: #f3f2ee;
+  --bg-card: #ffffff;
+  --bg-secondary: #e9e8e3;
+  --bg-hover: #e5e4de;
+  --text-primary: #1c1c1a;
+  --text-secondary: #686762;
+  --text-muted: #8e8d87;
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.16);
+  --accent-color: #111110;
+  --badge-bg: rgba(0, 0, 0, 0.05);
+  --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
 
-  /* Text Colors */
-  --color-text-primary: #e0e0e0;
-  --color-text-secondary: #b0b0b0;
-  --color-text-muted: #808080;
+.dark {
+  --bg-primary: #161615;
+  --bg-card: #1c1c1a;
+  --bg-secondary: #222220;
+  --bg-hover: #292926;
+  --text-primary: #ecebe8;
+  --text-secondary: #9e9d96;
+  --text-muted: #6b6a65;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --accent-color: #ffffff;
+  --badge-bg: rgba(255, 255, 255, 0.06);
+  --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+}
 
-  /* Hover States - Add these */
-  --color-text-hover: #ffffff;
-  --color-accent: #888888; /* Links/Interactive */
-  --color-accent-hover: #b0b0b0; /* Lighter accent for hover */
+html {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
 
-  /* primary button  */
-  --color-btn-primary: #3b82f6;           /* Blue 600 */
-  --color-btn-primary-hover: #2563eb;     /* Blue 700 */
-  --color-btn-primary-text: #ffffff;
-  
-  /* another text,border color variant  */
-  --color-text-other : #64ffda;
-  --color-border-other: #64ffda
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  min-height: 100vh;
+}
+
+/* Custom drop-cap for essays */
+.drop-cap::first-letter {
+  float: left;
+  font-size: 3.5rem;
+  line-height: 0.85;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Interactive dotted underline link style matching user request */
+.dada-link {
+  position: relative;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+.dada-link:hover {
+  text-decoration-style: dotted;
+  text-decoration-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+/* Three dots divider */
+.dot-red {
+  background-color: #ff5f56;
+}
+.dot-yellow {
+  background-color: #ffbd2e;
+}
+.dot-green {
+  background-color: #27c93f;
+}
+
+/* Scrollbar polish */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-strong);
 }

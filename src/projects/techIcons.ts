@@ -33,6 +33,9 @@ export const techIcons: Record<string, string> = {
 
   Express: "devicon-express-original",
   "Express.js": "devicon-express-original",
+  JWT: "devicon-json-plain colored",
+  Zod: "devicon-typescript-plain colored",
+  WebSocket: "devicon-socketio-original",
 
   // --- Databases ---
   MongoDB: "devicon-mongodb-plain colored",
@@ -70,13 +73,13 @@ export const techIcons: Record<string, string> = {
 
   Figma: "devicon-figma-plain colored",
 
-  // --- If nothing matches ---
-  Default: "devicon-code-plain",
-
-  // --- if chart.js
-  "Chart.js": "devicon-chartjs-plain colored",
-
-  // --- testing library ------
+  // --- Monitoring & Testing ---
+  Prometheus: "devicon-prometheus-original colored",
+  Grafana: "devicon-grafana-original colored",
   Jest: "devicon-jest-plain colored",
   Vitest: "devicon-vitest-plain colored",
+
+  // --- If nothing matches ---
+  Default: "devicon-code-plain",
+  "Chart.js": "devicon-chartjs-plain colored",
 };
